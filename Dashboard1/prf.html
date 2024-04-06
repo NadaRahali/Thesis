@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Performance</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bxs-coffee-bean'></i>
+            <div class="logo-name"><span>GDM</span>System</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="dsh.html"><i class="bx bx-analyse"></i>Analytics</a></li>
+            <li class="active"><a href="prf.html"><i class="bx bxs-report"></i>Performance</a></li>
+            <li><a href="setting.html"><i class='bx bx-cog'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="../LoginForm/index.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="profile">
+                <img src="images/Asset1.png">
+            </a>
+        </nav>
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Performance
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li><i class='bx bxs-hot'></i>
+                    <span class="info">
+                        <h3>
+                            90
+                        </h3>
+                        <p>Dryer inlet</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-wind'></i>
+                    <span class="info">
+                        <h3>
+                            16,5°C
+                        </h3>
+                        <p>Air temperature</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            14,0
+                        </h3>
+                        <p>Moisturizer</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <!-- Title -->
+            <div id="dryer-title">Dryer Dispatch</div>
+
+            <!-- First Graph -->
+            <div id="chart_div"></div>
+
+            <!-- Title -->
+            <div id="mois-title">Moisture</div>
+
+            <!-- Second Graph -->
+            <div id="crosshairs-chart"></div>
+
+            <!-- Title -->
+            <div id="patch-title">Ready Patch</div>
+
+            <!-- Third Graph -->
+            <div id="graph"></div>
+            
+
+
+        </main>
+
+    </div>
+
+    <script src="Js/index.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/visual.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="Js/patch.js"></script>
+
+</body>
+
+</html>

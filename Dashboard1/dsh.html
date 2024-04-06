@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bxs-coffee-bean'></i>
+            <div class="logo-name"><span>GDM</span>System</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+            <li><a href="prf.html"><i class="bx bxs-report"></i>Performance</a></li>
+            <li><a href="setting.html"><i class='bx bx-cog'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="../LoginForm/index.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="profile">
+                <img src="images/Asset1.png">
+            </a>
+        </nav>
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li><i class='bx bxs-hot'></i>
+                    <span class="info">
+                        <h3>
+                            90
+                        </h3>
+                        <p>Dryer inlet</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-wind'></i>
+                    <span class="info">
+                        <h3>
+                            16,5°C
+                        </h3>
+                        <p>Air temperature</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            14,0
+                        </h3>
+                        <p>Moisturizer</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <!-- Patch -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-package'></i>
+                        <h3>Patches</h3>
+                        <i class='bx bx-reset'></i>
+                        <i class='bx bx-stopwatch'></i>
+                    </div>
+                    <div class="patch-details">
+                        <div class="grain-type">
+                            <label for="grain-type">Grain Type:</label>
+                            <select id="grain-type">
+                                <option value="Corn">Corn</option>
+                                <option value="Quinoa">Quinoa</option>
+                                <option value="Bulgur">Bulgur</option>
+                                <option value="Wheat">Wheat</option>
+                            </select>
+                        </div>
+                        <div class="amount">
+                            <label for="amount">Grain Quantity (kg):</label>
+                            <input type="number" id="amount" min="1" max="50">
+                        </div>
+                        <div class="time-interval">
+                            <label for="time-interval">Time Interval:</label>
+                            <select id="time-interval">
+                                <option value="2h">2 hours</option>
+                                <option value="4h">4 hours</option>
+                                <option value="4h">7 hours</option>
+                                <option value="4h">10 hours</option>
+                                <option value="8h">12 hours</option>
+                                <option value="4h">14 hours</option>
+                                <option value="16h">16 hours</option>
+                            </select>
+                        </div>
+                        <div class="patch-details">
+                            <label for="process-date">Date of Process:</label>
+                            <input type="date" id="process-date">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Patches -->
+
+            <!-- Dashboard -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Recent Evaluation</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grain Type</th>
+                                <th>Evaluation Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/wheat.png">
+                                    <p>Wheat</p>
+                                </td>
+                                <td>06-01-2024</td>
+                                <td><span class="status completed">Good Moisturizer</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/corn.png">
+                                    <p>Corn</p>
+                                </td>
+                                <td>18-02-2024</td>
+                                <td><span class="status completed">Not bad Moisturizer</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/oats.png">
+                                    <p>Oats</p>
+                                </td>
+                                <td>28-03-2024</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of Dahboard -->
+
+                <!-- Grain availability -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Grain availability</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Grain Wheat</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Grain Corn</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Grain Quinoa</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Grain Bulgur</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Grain Availability-->
+
+            </div>
+        </main>
+    </div>
+
+    <script src="Js/index.js"></script>
+
+
+</body>
+
+</html>
